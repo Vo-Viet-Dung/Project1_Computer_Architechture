@@ -1,5 +1,10 @@
 function showValue() {
     var value = document.getElementById("dialogv5ed3679927243_option").value;
+    //Set mien gia tri theo so bit muon bieu dien
+    var input_n = parseInt(document.getElementById("dialogv5ed3679927243_n").value, 10);
+    var upper = Math.pow(2, input_n) / 2 - 1;
+    var lower = -Math.pow(2, input_n) / 2;
+    document.getElementById("dialogv5ed3679927243_range").innerHTML = "[" + lower + "," + upper + "]";
     //Kiểm tra option de lua chon phep toan can thuc hien
     switch (value) {
 
