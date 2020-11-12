@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Site made with Mobirise Website Builder v5.1.4, https://mobirise.com -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="generator" content="Mobirise v5.1.4, mobirise.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <link rel="shortcut icon" href="assets/images/mbr-121x181.jpg" type="image/x-icon">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="planetcalc_common_3738.css">
+    <link rel="stylesheet" href="/styles.css">
+
+    <title>Floating Point Converter</title>
+    <link rel="stylesheet" href="assets/web/assets/mobirise-icons2/mobirise2.css">
+    <link rel="stylesheet" href="assets/tether/tether.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="assets/dropdown/css/style.css">
+    <link rel="stylesheet" href="assets/socicon/css/styles.css">
+    <link rel="stylesheet" href="assets/theme/css/style.css">
+    <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css">
+    <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+
+
+
+
+</head>
+
+<body>
+
+    <section class="header2 cid-sbzaQsdudd mbr-fullscreen mbr-parallax-background" id="header2-m">
+
+
+
+        <div class="mbr-overlay" style="opacity: 0.8; background-color: rgb(255, 255, 255);"></div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-7">
+                    <h1 class="mbr-section-title mbr-fonts-style mb-3 display-1"></h1>
+
+                    <p class="mbr-text mbr-fonts-style display-7">Trang web hỗ trợ học sinh chuyển đổi dấu phảy động theo chuẩn IEEE 754</p>
+                    <div class="mbr-section-btn mt-3">
+                        <a class="btn btn-success display-4" href="https://mobiri.se">Free Download!</a>
+                        <a class="btn btn-success-outline display-4" href="https://mobiri.se">Live Demos &gt;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="header3 cid-sbBZwpprSK mbr-fullscreen" id="header3-s">
+
+
+
+        <div class="mbr-overlay" style="opacity: 0.2; background-color: rgb(255, 255, 255);"></div>
+
+        <!-- <div class="align-center container">
+            <div class="row justify-content-end">
+                <div class="col-12 col-lg-6">
+                    <h1 class="mbr-section-title mbr-fonts-style mb-3 display-1"><strong>Building a website</strong></h1>
+
+                    <p class="mbr-text mbr-fonts-style display-7">For fast prototyping and small customers' projects.</p>
+
+                </div>
+            </div>
+        </div> -->
+
+        <div class="article">
+            <div class="article_body">
+                <div class="pc-article-part">
+                    <div class="u5">
+                        <div class="w_ f8" id="dialogv5ed3679927243">
+                            <div class="x_ j0">
+                                <div class="s8 t8">
+                                </div>
+                                <div class="n4 x">
+                                    <div id="hlp_default_dialogv5ed3679927243" class="e4 c4"></div>
+                                </div>
+                            </div>
+                            <div class="x_ a0">
+                                <div class="j4g8o2">
+
+                                    <label class="h3i3" for="dialogv5ed3679927243_input">Decimal Input</label>
+                                    <input class="l4" type="text" size="12" name="input" id="dialogv5ed3679927243_input">
+                                    <div class="_3"></div>
+
+                                </div>
+                                <div class="n4">
+                                    <div id="hlp_dialogv5ed3679927243_input" class="e4 c4">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="x_ a0">
+                                <div class="j4g8o1">
+
+                                    <label class="h3i3" for="dialogv5ed3679927243_n">Binary Input</label>
+                                    <input class="l4" type="text" size="12" name="n" id="dialogv5ed3679927243_n">
+                                    <div class="_3"></div>
+                                </div>
+                                <div class="n4">
+                                    <div id="hlp_dialogv5ed3679927243_n" class="e4 c4">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="x_ j0">
+                                <div class="r8">
+                                    <button type="button" onclick="ConvertFloattoBin()" id="dialogv5ed3679927243_Convert" class="c2 g2 s_ pc-btn-calc o1">
+                <span id="dialogv5ed3679927243_button_text">Convert</span>
+            </button>
+                                    <button type="button" onclick="ConvertBintoFloat()" id="dialogv5ed3679927243_Inverse" class="c2 g2 s_ pc-btn-calc o1">
+                <span id="dialogv5ed3679927243_button_text">Invert</span>
+            </button>
+                                </div>
+                            </div>
+                            <div class="x_ j0">
+                                <div class="e8">
+                                    <div id="dialogv5ed3679927243__progress_" role="progressbar" class="c8 m0 t0" style="display: none;">
+                                        <div class="p0"></div>
+                                        <div class="q0"></div>
+                                        <div class="n0 r0">
+                                            <span class="o0"></span>
+                                        </div>
+                                        <div class="n0 s0">
+                                            <span class="o0"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="x_ a0" style="opacity: 1;">
+                                <div class="o8">REPRESENTATION</div>
+                                <div class="pc-output-value p8" id="dialogv5ed3679927243_representation"></div>
+                            </div>
+                            <!-- <div class="x_ a0" style="opacity: 1;">
+                                <div class="o8">Binary code</div>
+                                <div class="pc-output-value p8" id="dialogv5ed3679927243_range">[-128,127]</div>
+                            </div> -->
+                            <!-- <div class="x_ a0" style="opacity: 1;">
+                                <div class="o8">Inverse code (one's complement)</div>
+                                <div class="pc-output-value p8" id="dialogv5ed3679927243_inverse">11110011</div>
+                            </div>
+                            <div class="x_ a0" style="opacity: 1;">
+                                <div class="o8">Complement code (two's complement)</div>
+                                <div class="pc-output-value p8" id="dialogv5ed3679927243_complement">11110100</div>
+                            </div> -->
+                            <div class="x_ j0">
+                                <div class="b2">
+                                    <div class="pc-calc-footer">
+                                        <div class="ba u8"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <script src="Dauphaydong.js">
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="menu cid-s48OLK6784" once="menu" id="menu1-k">
+
+        <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
+            <div class="container-fluid">
+                <div class="navbar-brand">
+                    <span class="navbar-logo">
+                    <a href="https://mobiri.se">
+                        <img src="assets/images/mbr-121x181.jpg" alt="Mobirise" style="height: 4.9rem;">
+                    </a>
+                </span>
+                    <span class="navbar-caption-wrap"><a class="navbar-caption text-info text-primary display-7" href="index.html"><span class="mobi-mbri mobi-mbri-mobile mbr-iconfont mbr-iconfont-btn"></span>Computer Architecture</a>
+                    </span>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true">
+                        <li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="Floating Point Converter.html">Floating Point Converter</a></li>
+                        <li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="page2.html">Binary Calculator</a></li>
+                        <li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="page3.html">Binary Inverse</a></li>
+                    </ul>
+
+
+                </div>
+            </div>
+        </nav>
+
+    </section>
+
+    <section class="footer3 cid-s48P1Icc8J" once="footers" id="footer3-l">
+
+
+
+
+
+        <div class="container">
+            <div class="media-container-row align-center mbr-white">
+                <div class="row row-links">
+                    <ul class="foot-menu">
+
+
+
+
+
+                        <li class="foot-menu-item mbr-fonts-style display-7"><a href="https://mobirise.com/help/" class="text-success">Help Center</a></li>
+                        <li class="foot-menu-item mbr-fonts-style display-7"><a href="http://forums.mobirise.com/" class="text-success">Mobirise Forums</a></li>
+                        <li class="foot-menu-item mbr-fonts-style display-7"><a href="https://mobirise.com/" class="text-success">Mobirise.com</a></li>
+                    </ul>
+                </div>
+                <div class="row social-row">
+                    <div class="social-list align-right pb-2">
+
+
+
+
+
+
+                        <div class="soc-item">
+                            <a href="https://twitter.com/mobirise" target="_blank">
+                                <span class="socicon-twitter socicon mbr-iconfont mbr-iconfont-social"></span>
+                            </a>
+                        </div>
+                        <div class="soc-item">
+                            <a href="https://www.facebook.com/pages/Mobirise/1616226671953247" target="_blank">
+                                <span class="socicon-facebook socicon mbr-iconfont mbr-iconfont-social"></span>
+                            </a>
+                        </div>
+                        <div class="soc-item">
+                            <a href="https://www.youtube.com/c/mobirise" target="_blank">
+                                <span class="socicon-youtube socicon mbr-iconfont mbr-iconfont-social"></span>
+                            </a>
+                        </div>
+                        <div class="soc-item">
+                            <a href="https://instagram.com/mobirise" target="_blank">
+                                <span class="mbr-iconfont mbr-iconfont-social socicon-instagram socicon"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-copirayt">
+                    <p class="mbr-text mb-0 mbr-fonts-style mbr-white align-center display-7">
+                        © Copyright 2020 Mobirise. All Rights Reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section style="background-color: #fff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif; color:#aaa; font-size:12px; padding: 0; align-items: center; display: flex;">
+        <a href="https://mobirise.site/m" style="flex: 1 1; height: 3rem; padding-left: 1rem;"></a>
+        <p style="flex: 0 0 auto; margin:0; padding-right:1rem;"><a href="https://mobirise.site/t" style="color:#aaa;">Made</a> with Mobirise bootstrap website template</p>
+    </section>
+    <script src="assets/web/assets/jquery/jquery.min.js"></script>
+    <script src="assets/popper/popper.min.js"></script>
+    <script src="assets/tether/tether.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/smoothscroll/smooth-scroll.js"></script>
+    <script src="assets/parallax/jarallax.min.js"></script>
+    <script src="assets/dropdown/js/nav-dropdown.js"></script>
+    <script src="assets/dropdown/js/navbar-dropdown.js"></script>
+    <script src="assets/touchswipe/jquery.touch-swipe.min.js"></script>
+    <script src="assets/theme/js/script.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,9 @@
+open snap.techlinkvn.com 
+myaccount
+mypassword
+binary 
+mkdir 20201029 
+cd 20201029 
+put "Release\20201029\version.txt" 
+put "Release\20201029\page3.html" 
+quit 
