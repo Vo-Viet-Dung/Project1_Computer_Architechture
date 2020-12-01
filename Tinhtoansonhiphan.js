@@ -25,13 +25,13 @@ function showValue() {
 
 }
 
-function convertInput() {}
-
 function addBin() {
     // Nhan gia tri dau vao va so bit bieu dien duoi dang so nguyen co dau
     var input1 = parseInt(document.getElementById("dialogv5ed3679927243_input1").value, 10);
     var input2 = parseInt(document.getElementById("dialogv5ed3679927243_input2").value, 10);
     var input_n = parseInt(document.getElementById("dialogv5ed3679927243_n").value, 10);
+    var upper = Math.pow(2, input_n) / 2 - 1;
+    var lower = -Math.pow(2, input_n) / 2;
     //Tinh toan ket qua o he 10 sau do xu ly chuyen ve nhi phan
     var rs = input1 + input2;
     var output;
@@ -44,13 +44,22 @@ function addBin() {
         }).join('');
         output = (parseInt(binary_inverse, 2) + 1).toString(2);
     } else { output = (rs).toString(2).padStart(input_n, "0"); }
-    return output;
+    if (input1 > upper || input1 < lower || input2 > upper || input2 < lower || rs > upper || rs < lower) {
+        // Hien thi canh bao neu tran so
+        alert("Overflow - not enough binary digits to display this value");
+        return "Overflow";
+    } else {
+        return output;
+    }
+
 }
 
 function subBin() {
     var input1 = parseInt(document.getElementById("dialogv5ed3679927243_input1").value, 10);
     var input2 = parseInt(document.getElementById("dialogv5ed3679927243_input2").value, 10);
     var input_n = parseInt(document.getElementById("dialogv5ed3679927243_n").value, 10);
+    var upper = Math.pow(2, input_n) / 2 - 1;
+    var lower = -Math.pow(2, input_n) / 2;
     var rs = input1 - input2;
     var output;
     if (rs < 0) {
@@ -61,13 +70,21 @@ function subBin() {
         }).join('');
         output = (parseInt(binary_inverse, 2) + 1).toString(2);
     } else { output = (rs).toString(2).padStart(input_n, "0"); }
-    return output;
+    if (input1 > upper || input1 < lower || input2 > upper || input2 < lower || rs > upper || rs < lower) {
+        // Hien thi canh bao neu tran so
+        alert("Overflow - not enough binary digits to display this value");
+        return "Overflow";
+    } else {
+        return output;
+    }
 }
 
 function mulBin() {
     var input1 = parseInt(document.getElementById("dialogv5ed3679927243_input1").value, 10);
     var input2 = parseInt(document.getElementById("dialogv5ed3679927243_input2").value, 10);
     var input_n = parseInt(document.getElementById("dialogv5ed3679927243_n").value, 10);
+    var upper = Math.pow(2, input_n) / 2 - 1;
+    var lower = -Math.pow(2, input_n) / 2;
     var rs = input1 * input2;
     var output;
     if (rs < 0) {
@@ -78,13 +95,21 @@ function mulBin() {
         }).join('');
         output = (parseInt(binary_inverse, 2) + 1).toString(2);
     } else { output = (rs).toString(2).padStart(input_n, "0"); }
-    return output;
+    if (input1 > upper || input1 < lower || input2 > upper || input2 < lower || rs > upper || rs < lower) {
+        // Hien thi canh bao neu tran so
+        alert("Overflow - not enough binary digits to display this value");
+        return "Overflow";
+    } else {
+        return output;
+    }
 }
 
 function divBin() {
     var input1 = parseInt(document.getElementById("dialogv5ed3679927243_input1").value, 10);
     var input2 = parseInt(document.getElementById("dialogv5ed3679927243_input2").value, 10);
     var input_n = parseInt(document.getElementById("dialogv5ed3679927243_n").value, 10);
+    var upper = Math.pow(2, input_n) / 2 - 1;
+    var lower = -Math.pow(2, input_n) / 2;
     var rs = input1 / input2;
     var output;
     if (rs < 0) {
@@ -95,5 +120,11 @@ function divBin() {
         }).join('');
         output = (parseInt(binary_inverse, 2) + 1).toString(2);
     } else { output = (rs).toString(2).padStart(input_n, "0"); }
-    return output;
+    if (input1 > upper || input1 < lower || input2 > upper || input2 < lower || rs > upper || rs < lower) {
+        // Hien thi canh bao neu tran so
+        alert("Overflow - not enough binary digits to display this value");
+        return "Overflow";
+    } else {
+        return output;
+    }
 }

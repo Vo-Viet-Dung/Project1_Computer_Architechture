@@ -103,7 +103,7 @@
               "color": "#232323",
               "text-align": "center"
             },
-            "@media (max-width: 991px)": {
+            "@media (max-width: 700px)": {
               ".mbr-section-title, .mbr-section-btn, .mbr-text": {
                 "text-align": "center"
               }
